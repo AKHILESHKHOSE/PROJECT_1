@@ -9,8 +9,8 @@
   
 */
 --1
-
---CREATION AND VERIFICATION
+--CREATING 'matches' TABLE IN A NON-PUBLIC SCHEMA 'myschema'  WITH REQUIRED FIELDS MENTIONED IN README.md
+-- VERIFICATION
 CREATE TABLE myschema.matches (
     id bigint PRIMARY KEY,
     city varchar,
@@ -34,6 +34,9 @@ CREATE TABLE myschema.matches (
 SELECT * FROM myschema.matches;
 
 --2
+
+--CREATING 'deliveries' TABLE IN A NON-PUBLIC SCHEMA 'myschema'  WITH REQUIRED FIELDS MENTIONED IN README.md
+-- VERIFICATION
 CREATE TABLE myschema.deliveries (
     id bigint,
     FOREIGN KEY (id) REFERENCES myschema.matches,

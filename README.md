@@ -4,8 +4,7 @@ Welcome to the final project - Sports Analytics using SQL! In this project, we w
 
 Our task is to import these datasets into an SQL database and analyze them to extract valuable insights and trends from the IPL matches.
 
-About the Data
-Please download the datasets by clicking here and ensure they are ready before we begin our analysis.
+
 
 # Ball-by-Ball Data
 The first CSV file contains ball-by-ball data, encompassing information on all 193,468 balls bowled between the years 2008 and 2020. It comprises 17 columns, each providing specific details about the ball bowled. Here's a brief overview of the columns:

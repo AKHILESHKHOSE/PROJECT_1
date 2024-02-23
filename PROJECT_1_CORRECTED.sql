@@ -75,29 +75,44 @@ COPY myschema.deliveries FROM 'C:\Program Files\PostgreSQL\16\data\PROJECT_INTER
 
 
 --ALTER COMMAND IS USED TO RE-DEFINE DATATYPE OF dismissal_kind to char(50) 
---as for some data the length exceeded and then COPY AGAIN
+--AS FOR SOME DATA THE REQIURED  STRING LENGTH  IS MORE THAN DECLARED 
+-- COPY AGAIN AFTER THE CHANGE
 
 ALTER TABLE myschema.deliveries ALTER COLUMN dismissal_kind TYPE char(50);
 
 
 --5
---FIRST 20 MATCHES THAT WERE PLAYED IN IPL
+--FIRST 20 MATCHES THAT WERE PLAYED IN IPL 
+--ALIAS IS JUST USED  AS SUCH NOT NEEDED
+
+
 SELECT * FROM myschema.matches AS a ORDER BY a.id, a.date LIMIT 20;
 
 SELECT * FROM myschema.deliveries WHERE id=335982 order by inning,over,ball;
+
+
+
 --6
 --FIRST 20 BALLS OF THE 1st GAME
+--ALIAS IS JUST USED  AS SUCH NOT
 
 SELECT * FROM myschema.deliveries AS a ORDER BY a.id, a.inning, a.over, a.ball LIMIT 20;
 
 SELECT * FROM myschema.matches order by id,date;
+
+
+
 --7
 --NO. OF MATCHES PLAYED ON MAY 2nd 2013
 SELECT * FROM myschema.matches WHERE date = '2013-05-02';
 
+
+
 --8
 --TEAMS WINNING THE MATCHES ON BASIS OF 'RUNS > 100'
 SELECT DISTINCT * FROM myschema.matches WHERE result = 'runs' AND result_margin > 100;
+
+
 
 --9
 --TIED MATCHES ORDER BY DATE DESC ORDER
@@ -113,9 +128,12 @@ SELECT * FROM myschema.matches WHERE result='tie' and date='2020-10-18;
 SELECT COUNT(DISTINCT city) AS NO_OF_HOST_CITY FROM myschema.matches;
 
 
+
 --NEW TABLE WITH NEW COLUMN AS ball_result
 
 SELECT * FROM myschema.deliveries;
+
+
 
 --11
 CREATE TABLE myschema.deliveries_v02 AS 	
@@ -134,19 +152,24 @@ FROM
 
 SELECT * FROM myschema.deliveries_v02;
 
+
+
 --12
---FIND TOTAL NO. OF BOUNDARIES and dot balls in all the matches
+--FIND TOTAL NO. OF BOUNDARIES and dot balls in all of the matches played.
 
 SELECT  ball_result, COUNT(ball_result) FROM myschema.deliveries_v02 GROUP BY ball_result;
 
+
+
 --13
--- TEAM WISE BOUNDARIES DESCENDING ORDER
+--NO. OF BOUNDARIES SCORED BY EACH TEAM (DESCENDING ORDER)
 
 SELECT batting_team, ball_result, COUNT(ball_result) FROM myschema.deliveries_v02 WHERE ball_result = 'boundary' GROUP BY batting_team, ball_result ORDER BY COUNT(ball_result) DESC;
 
 
+
 --14
---TEAM WISE DOT BALLS DESCENDING ORDER
+--NO. OF DOT BALLS DELIVERED BY THE TEAMS (DESCENDING ORDER)
 
 SELECT bowling_team, ball_result, COUNT(ball_result) FROM myschema.deliveries_v02 WHERE ball_result = 'dot' GROUP BY bowling_team, ball_result ORDER BY COUNT(ball_result) DESC;
 
@@ -154,11 +177,12 @@ SELECT bowling_team, ball_result, COUNT(ball_result) FROM myschema.deliveries_v0
 
 --15
 --TOTAL DISMISSALS WHERE KIND IS NOT NA
-SELECT COUNT(dismissal_kind) FROM myschema.deliveries WHERE dismissal_kind != 'NA' ;
+SELECT COUNT(dismissal_kind) FROM myschema.deliveries WHERE dismissal_kind !='NA' ;
+
 
 
 --16
---TOP 5 BOWLERS 
+--TOP 5 BOWLERS WITH MAXIMUM WICKETS
 
 SELECT * FROM myschema.deliveries;
 
@@ -169,8 +193,8 @@ SELECT bowler, SUM(extra_runs) AS TOTAL_WICKETS FROM myschema.deliveries WHERE d
 
 
 --17
---CREATE deliveries_v03 with all data of deliveries_v02 and
---with venue and match_date
+--CREATE deliveries_v03 WITH ALL DATA OF  'deliveries_v02' AND
+-ALSO ADD 'venue' and 'date' 
 
 CREATE TABLE myschema.deliveries_v03 AS
 SELECT a.*, b.venue, b.date FROM myschema.deliveries_v02 AS a INNER JOIN myschema.matches AS b ON a.id = b.id;

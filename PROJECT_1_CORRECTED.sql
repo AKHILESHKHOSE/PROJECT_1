@@ -1,9 +1,9 @@
 --  PROJECT NAME: SPORT-ANALYTICS 
 --  LANGUAGE :   SQL(structured Query Language)
 /*  
-  PROJECT DESCRIPTION:  
+  PROJECT OVERVIEW:  
   					
-  The Project aims to draw valuable INSIGHTS 
+  The Project aims to draw valuable INSIGHTS from  Data of Matches played in IPL
   like BEST PERFORMING TEAM,PLAYERS AND  DATA MANIPULAION IF
   FOUND INCORRECT. 
   

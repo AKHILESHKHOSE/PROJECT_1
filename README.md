@@ -1,4 +1,5 @@
-#Overview
+# Overview
+
 Welcome to the final project - Sports Analytics using SQL! In this project, we will delve into the exciting world of sports analytics, focusing specifically on the Indian Premier League (IPL) cricket matches. We have been provided with two datasets: one containing ball-by-ball data and the other containing match-wise data.
 
 Our task is to import these datasets into an SQL database and analyze them to extract valuable insights and trends from the IPL matches.
@@ -27,7 +28,7 @@ extras_type: Type of extra run conceded
 batting_team: Name of the batting team
 bowling_team: Name of the bowling team
 
-#Match-wise Data
+# Match-wise Data
 The second file contains match-wise data, comprising information on 816 IPL matches. It also consists of 17 columns, providing insights into each IPL match. Here's a brief overview of the columns in this table:
 
 id: Unique identifier for the match
@@ -48,6 +49,6 @@ method: Method used to determine the result
 umpire1: Name of the first umpire
 umpire2: Name of the second umpire
 
-#License
+# License
 This project is licensed under the terms of the MIT license. Feel free to use and modify the code as per your requirements.
 

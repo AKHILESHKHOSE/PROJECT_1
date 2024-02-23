@@ -18,11 +18,14 @@ Getting Started:
 
 # Clone the repository: Open your terminal or command prompt and run: git clone https://github.com/your-username/sports-analytics-sql.git
 
-Set up your database:
+1. Set up your database:
 Install PostgreSQL: Follow the official guide: https://www.postgresql.org/download/
-Create a database: Use a descriptive name (e.g., ipl_analytics).
-Import the data: Execute the provided SQL scripts (create_tables.sql and import_data.sql) to create tables and populate them with the data.
-Run the analysis scripts: Use an SQL client or command line to execute the provided scripts (analysis.sql, visualization.sql). These scripts perform various analyses and generate visualizations (optional).
+2. Create a database:
+ Use a descriptive name (e.g., ipl_analytics).
+3.Import the data: 
+Execute the provided SQL scripts (create_tables.sql and import_data.sql) to create tables and populate them with the data.
+4. Run the analysis scripts: 
+Use an SQL client or command line to execute the provided scripts (analysis.sql, visualization.sql). These scripts perform various analyses and generate visualizations (optional).
 
 # Project Structure:
 

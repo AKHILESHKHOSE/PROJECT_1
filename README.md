@@ -20,12 +20,16 @@ Getting Started:
 
 1. Set up your database:
 Install PostgreSQL: Follow the official guide: https://www.postgresql.org/download/
+
 2. Create a database:
  Use a descriptive name (e.g., ipl_analytics).
+
 3.Import the data: 
 Execute the provided SQL scripts (create_tables.sql and import_data.sql) to create tables and populate them with the data.
-4. Run the analysis scripts: 
-Use an SQL client or command line to execute the provided scripts (analysis.sql, visualization.sql). These scripts perform various analyses and generate visualizations (optional).
+
+4. Run the Query in PG ADMIN: 
+
+Check the output until you are satisfied and the condition is met
 
 # Project Structure:
 

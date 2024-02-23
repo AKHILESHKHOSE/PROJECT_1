@@ -4,8 +4,8 @@
  PROJECT OVERVIEW:  
  
  The Project aims to draw valuable INSIGHTS from  Data of Matches played in IPL
- like BEST PERFORMING TEAM,PLAYERS AND  DATA MANIPULAION IF
- FOUND INCORRECT. 
+ since first season.
+
  
  */
 

@@ -20,7 +20,9 @@ Git (Version control): Track changes and collaborate effectively.
 GitHub (Code hosting platform): Share your project and insights with the community.
 Getting Started:
 
-# Clone the repository: Open your terminal or command prompt and run: git clone https://github.com/your-username/sports-analytics-sql.git
+# Clone the repository: 
+Open your terminal or command prompt and run: 
+git clone https://github.com/your-username/sports-analytics-sql.git
 
 1. Set up your database:
 Install PostgreSQL: Follow the official guide: https://www.postgresql.org/download/

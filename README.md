@@ -35,18 +35,22 @@ Execute the provided SQL scripts (create_tables.sql and import_data.sql) to crea
 
 4. Run the Query in PG ADMIN: 
 
-Check the output until you are satisfied and the condition is met
+5. Check the output and update queried time to time as per the requirement.
 
 # Project Structure:
 
-data: Contains the two datasets (ball-by-ball and match-wise) in CSV format.
-sql: Holds SQL scripts for:
+1.data: 
+Contains the two datasets (ball-by-ball and match-wise) in CSV format.
+
+2.sql: 
+Holds SQL scripts for:
 Setting up the database (tables and data import)
 Performing various analyses (e.g., top batsmen, best bowling spells, venue performance)
 Generating visualizations (optional)
 documentation (optional): Provides additional explanations, insights, and potential extensions.
-readme.md: This file you are reading.
-requirements.txt (optional): Lists Python dependencies if you use them.
+
+3.readme.md: 
+This file you are reading.
 
 # Contributing:
 
@@ -55,9 +59,3 @@ We encourage contributions! If you have ideas for new analyses, visualizations, 
 # License
 This project is licensed under a Custom View-Only License. This means you can access and use the code for learning and reference purposes, but you cannot modify, copy, or distribute it without explicit permission.
 
-# Additional Notes:
-
-Consider adding screenshots or GIFs of visualizations to showcase your project's impact.
-Include links to relevant resources or tutorials for learning SQL and sports analytics.
-Mention any dependencies or requirements for running the project.
-Highlight your project's unique aspects and potential applications.

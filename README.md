@@ -4,8 +4,12 @@
 
 Embark on a data-driven exploration of IPL cricket matches! This project leverages the power of SQL to analyze two comprehensive datasets:
 
-Ball-by-ball data: Dive into the heart of action with detailed information on each delivery, including batsman, bowler, runs scored, and wicket details.
-Match-wise data: Gain a holistic view of each match with summaries like teams playing, winner, venue, and other match-level statistics.
+A. Ball-by-ball data: 
+Dive into the heart of action with detailed information on each delivery, including batsman, bowler, runs scored, and wicket details.
+
+B.Match-wise data: 
+
+Gain a holistic view of each match with summaries like teams playing, winner, venue, and other match-level statistics.
 Through in-depth analysis, we aim to uncover hidden patterns, predict future outcomes, and gain valuable insights into the dynamic world of IPL cricket.
 
 # Technologies Used:

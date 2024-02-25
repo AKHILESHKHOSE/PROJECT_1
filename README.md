@@ -1,4 +1,4 @@
-# Project Title: Sports Analytics using SQL: Delving into IPL Cricket Data
+# Project Title:   Sports Analytics using SQL: Delving into IPL Cricket Data
 
 # Description:
 

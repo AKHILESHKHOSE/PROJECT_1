@@ -1,4 +1,4 @@
---  PROJECT NAME: SPORT-ANALYTICS 
+--  PROJECT NAME:  SPORT-ANALYTICS 
 --  LANGUAGE :   SQL(structured Query Language)
 /*  
  PROJECT OVERVIEW:  
@@ -6,7 +6,6 @@
  The Project aims to draw valuable INSIGHTS from  Data of Matches played in IPL
  since first season.
 
- 
  */
 
 --1

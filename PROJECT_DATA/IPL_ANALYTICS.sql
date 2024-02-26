@@ -147,7 +147,7 @@ SELECT * FROM myschema.deliveries_v02;
 --12
 --FIND TOTAL NO. OF BOUNDARIES and dot balls in all of the matches played.
 
-SELECT ball_result, COUNT(ball_result) FROM myschema.deliveries_v02 GROUP BY ball_result;
+SELECT ball_result, COUNT(ball_result) as result_count FROM myschema.deliveries_v02 GROUP BY ball_result;
 
 
 
@@ -168,7 +168,7 @@ SELECT bowling_team, ball_result, COUNT(ball_result) FROM myschema.deliveries_v0
 
 --15
 --TOTAL DISMISSALS WHERE KIND IS NOT NA
-SELECT COUNT(dismissal_kind) FROM myschema.deliveries WHERE dismissal_kind != 'NA' ;
+SELECT COUNT(dismissal_kind) as total_dismissal FROM myschema.deliveries WHERE dismissal_kind != 'NA' ;
 
 
 
@@ -183,7 +183,7 @@ SELECT bowler, SUM(is_wicket) AS TOTAL_WICKETS FROM myschema.deliveries WHERE di
 
 --17
 --CREATE deliveries_v03 WITH ALL DATA OF  ' deliveries_v02 ' AND
--ALSO ADD ' venue ' and ' date ' 
+--ALSO ADD ' venue ' and ' date ' 
 
 CREATE TABLE myschema.deliveries_v03 AS
 SELECT a.*, b.venue, b.date FROM myschema.deliveries_v02 AS a INNER JOIN myschema.matches AS b ON a.id = b.id;

@@ -52,9 +52,13 @@ documentation (optional): Provides additional explanations, insights, and potent
 3.readme.md: 
 This file you are reading.
 
-# Contributing:
+## Project Credit
 
-We encourage contributions! If you have ideas for new analyses, visualizations, or improvements, feel free to fork the repository and submit a pull request.
+This project includes the Final project, which was provided by Internshala as part of their [mention the program or initiative, if applicable]. 
+
+I am grateful to Internshala for providing this project, which has been invaluable for my learning and development.
+
+
 
 # License
 This project is licensed under a Custom View-Only License. This means you can access and use the code for learning and reference purposes, but you cannot modify, copy, or distribute it without explicit permission.

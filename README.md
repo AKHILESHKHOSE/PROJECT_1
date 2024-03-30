@@ -54,7 +54,7 @@ This file you are reading.
 
 ## Project Credit
 
-This project includes the Final project, which was provided by <a href="https://internshala.com" value="Internshala"/> as part of their [mention the program or initiative, if applicable]. 
+This project includes the Final project, which was provided by <a href="https://internshala.com" name="Internshala"/> as part of their [mention the program or initiative, if applicable]. 
 
 I am grateful to Internshala for providing this project, which has been invaluable for my learning and development.
 

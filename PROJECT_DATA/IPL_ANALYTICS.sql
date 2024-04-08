@@ -230,7 +230,8 @@ CREATE TABLE myschema.deliveries_v04 AS
 SELECT CONCAT(id,' - ',inning,' - ',over,' - ',ball) AS ball_id,
  batsman, non_striker, bowler, batsman_runs, extra_runs, total_runs,
 is_wicket, dismissal_kind, player_dismissed, fielder, extras_type,
- batting_team, bowling_team, ball_result, venue, date  FROM myschema.deliveries_v03 ;
+ batting_team, bowling_team, ball_result, venue,
+date  FROM myschema.deliveries_v03 ;
 
 
 
